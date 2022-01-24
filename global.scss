@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap');
+
+@font-face {
+	font-family: 'Bebas-Neue-Light';
+	src: url('/Bebas-Neue-Light.ttf.woff') format('woff'),
+		url('/Bebas-Neue-Light.ttf.svg#Bebas-Neue-Light') format('svg'),
+		url('/Bebas-Neue-Light.ttf.eot'),
+		url('/Bebas-Neue-Light.ttf.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+#__next {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+body {
+	margin: 0;
+	font-size: large;
+	font-family: 'Raleway', sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+		'Segoe UI Symbol';
+	overflow: overlay;
+	line-height: 2rem;
+}
+
+body::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.097);
+	border-radius: 0px;
+	background-color: transparent;
+}
+
+body::-webkit-scrollbar {
+	width: 12px;
+	background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-color: rgba(85, 85, 85, 0.213);
+}

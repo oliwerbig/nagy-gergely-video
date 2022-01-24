@@ -1,0 +1,58 @@
+@import '../variables.scss';
+
+.navbar {
+	position: fixed;
+	z-index: 2;
+	width: 100vw;
+	background-color: transparent;
+	color: white;
+	transition: 0.33s ease;
+
+	&:hover {
+		background-color: rgba(255, 255, 255, 0.09);
+		transform: scale(1.005);
+		transition: 0.33s ease;
+	}
+
+	&.scrolled {
+		background-color: white;
+		color: black;
+		transition: 0.33s ease;
+
+		&:hover {
+			transform: scale(1.005);
+			transition: 0.33s ease;
+		}
+	}
+
+	li {
+		.link {
+			text-decoration: none;
+			color: inherit;
+			padding: 1.25rem 0.625rem;
+			cursor: pointer;
+		}
+
+		.active {
+			color: $secondary;
+		}
+
+		font-size: medium;
+		color: inherit;
+
+		&:hover {
+			color: $primary;
+		}
+	}
+
+	ul {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		align-content: flex-start;
+		flex-wrap: nowrap;
+		margin: 0;
+	}
+}

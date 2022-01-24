@@ -1,0 +1,28 @@
+@import '../variables.scss';
+
+.section {
+	width: 90vw;
+	margin: 0 0 0 auto;
+	padding-bottom: 5rem;
+
+	.content {
+		display: flex;
+		gap: 2rem;
+
+		.text {
+			text-align: justify;
+			text-indent: 4rem;
+		}
+
+		.video {
+			width: 800px;
+			height: calc(800px * 9 / 16);
+		}
+	}
+
+	.title {
+		font-variant-caps: all-petite-caps;
+		font-weight: 400;
+		font-size: 2.5rem;
+	}
+}

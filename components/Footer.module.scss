@@ -1,0 +1,13 @@
+.footer {
+	background-size: cover;
+	width: 100vw;
+	height: 50vh;
+	overflow: hidden;
+}
+
+.video {
+	background: url('/footer.png') 50% 50%;
+	position: relative;
+	pointer-events: none;
+	margin-top: -30vh;
+}

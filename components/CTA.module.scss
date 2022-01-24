@@ -1,0 +1,92 @@
+@import '../variables.scss';
+
+.cta {
+	cursor: pointer;
+	font-weight: 300;
+	font-size: larger;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-between;
+	align-items: center;
+	transition: transform 0.5s ease, color 0.15s ease;
+
+	color: rgb(0, 0, 0);
+	&.light {
+		color: rgb(255, 255, 255);
+	}
+
+	&:hover {
+		transform: scale(1.005) translateY(-0.1rem);
+		transition: transform 0.5s ease, color 0.15s ease;
+		color: $secondary;
+
+		&.light {
+			color: white;
+		}
+	}
+
+	.arrow {
+		color: inherit;
+		width: 3rem;
+		transition: transform 0.5s ease, color 0.15s ease;
+
+		&.up {
+			animation: pulseUp 1.5s infinite alternate;
+		}
+		&.right {
+			animation: pulseRight 1.5s infinite alternate;
+		}
+		&.down {
+			animation: pulseDown 1.5s infinite alternate;
+		}
+		&.left {
+			animation: pulseLeft 1.5s infinite alternate;
+		}
+	}
+}
+
+@keyframes pulseUp {
+	0% {
+		transform: translateY(0rem);
+		opacity: 0.5;
+	}
+	100% {
+		transform: translateY(-1rem);
+		opacity: 1;
+	}
+}
+
+@keyframes pulseRight {
+	0% {
+		transform: translateX(0rem);
+		opacity: 0.5;
+	}
+	100% {
+		transform: translateX(1rem);
+		opacity: 1;
+	}
+}
+
+@keyframes pulseDown {
+	0% {
+		transform: translateY(0rem);
+		opacity: 0.5;
+	}
+	100% {
+		transform: translateY(1rem);
+		opacity: 1;
+	}
+}
+
+@keyframes pulseLeft {
+	0% {
+		transform: translateX(0rem);
+		opacity: 0.5;
+	}
+	100% {
+		transform: translateX(-1rem);
+		opacity: 1;
+	}
+}

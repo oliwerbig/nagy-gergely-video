@@ -1,0 +1,35 @@
+@import '../variables.scss';
+
+.section {
+	width: 70vw;
+	margin: 0 auto;
+	padding: 3rem 0;
+	display: flex;
+
+	.text {
+		text-indent: 4rem;
+		text-align: justify;
+	}
+
+	.row {
+		display: flex;
+		gap: 1rem;
+		align-items: center;
+		justify-content: center;
+
+		.moreVideos {
+			text-decoration: none;
+			color: inherit;
+			font-weight: 500;
+			font-size: xx-large;
+			font-variant: all-small-caps;
+			transition: 0.25s ease;
+			padding: 1rem;
+		}
+	}
+
+	.cta {
+		width: 10vw;
+		padding: 1rem 2rem;
+	}
+}
