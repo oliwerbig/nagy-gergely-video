@@ -5,7 +5,6 @@ import { Link as ScrollLink } from 'react-scroll'
 import YouTube, { Options as YTOptions } from 'react-youtube'
 import CTA from './CTA'
 import styles from './Hero.module.scss'
-import Section from './Section'
 
 const Hero: FC = () => {
 	const opts: YTOptions = {
