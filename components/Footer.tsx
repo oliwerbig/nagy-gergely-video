@@ -5,7 +5,7 @@ import styles from './Footer.module.scss'
 const Footer: FC = () => {
 	return (
 		<footer className={styles.footer} id='footer'>
-			<Divider videoID='rLqIL5bqa1A'></Divider>
+			Nagy Gergely Wedding Videography
 		</footer>
 	)
 }
