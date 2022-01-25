@@ -9,21 +9,20 @@
 		z-index: 0;
 		pointer-events: none;
 		filter: brightness(50%);
-		width: 100vw;
-		height: calc(100vw * 9 / 16);
+		width: calc(100vh * (16 / 9));
+		height: 100vh;
 	}
 
 	.placeholder {
 		z-index: 1;
-		width: 100vw;
-		height: calc(100vw * (9 / 16) / 3);
+		width: calc(100vh * (16 / 9));
+		height: calc(100vh / 3);
 		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		align-content: stretch;
-		justify-content: space-evenly;
+		flex-flow: column wrap;
+		justify-content: center;
 		align-items: center;
 		box-shadow: inset 0px -20px 100px 20px rgb(0 0 0 / 100%);
+		line-height: 1.25;
 
 		.title {
 			z-index: 1;
@@ -31,6 +30,17 @@
 			font-family: 'Bebas-Neue-Light', sans-serif;
 			color: white;
 			font-size: 5rem;
+			&:hover {
+				transform: scale(0.995) translateY(-0.05rem);
+			}
+		}
+
+		.subtitle {
+			z-index: 1;
+			transition: 0.5s ease;
+			font-family: 'Bebas-Neue-Light', sans-serif;
+			color: white;
+			font-size: 2rem;
 			&:hover {
 				transform: scale(0.995) translateY(-0.05rem);
 			}

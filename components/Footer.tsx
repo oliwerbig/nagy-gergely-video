@@ -1,9 +1,8 @@
-import YouTube, { Options as YTOptions } from 'react-youtube'
-import useWindowSize from '../hooks/useWindowSize'
+import { FC } from 'react'
 import Divider from './Divider'
 import styles from './Footer.module.scss'
 
-const Footer = () => {
+const Footer: FC = () => {
 	return (
 		<footer className={styles.footer} id='footer'>
 			<Divider videoID='rLqIL5bqa1A'></Divider>

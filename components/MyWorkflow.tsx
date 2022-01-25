@@ -1,9 +1,10 @@
+import { FC } from 'react'
 import { Link as ScrollLink } from 'react-scroll'
 import CTA from './CTA'
 import Divider from './Divider'
 import styles from './MyWorkflow.module.scss'
 
-const MyWorkflow = () => {
+const MyWorkflow: FC = () => {
 	return (
 		<section id='myWorkflow'>
 			<Divider
@@ -12,7 +13,6 @@ const MyWorkflow = () => {
 				title='Hogyan dolgozom?'
 			/>
 			<section className={styles.section}>
-				<p></p>
 				<p className={styles.text}>
 					Küldetésemnek és felelősségemnek érzem, hogy olyan videót
 					adjak át az esküvőtökről, ami a nagy nap valós hangulatát és
@@ -104,7 +104,7 @@ const MyWorkflow = () => {
 				<ScrollLink
 					to='myExperiences'
 					duration={500}
-					offset={150}
+					offset={-50}
 					smooth={true}
 					spyThrottle={1000}>
 					<CTA title='Előző munkáim' up />

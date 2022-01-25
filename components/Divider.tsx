@@ -7,10 +7,18 @@ interface Props {
 	videoID: string
 	altImageURL?: string
 	title?: string
+	subtitle?: string
 	children?: any
 	id?: string
 }
-const Divider: FC<Props> = ({ videoID, title, altImageURL, children, id }) => {
+const Divider: FC<Props> = ({
+	videoID,
+	title,
+	subtitle,
+	altImageURL,
+	children,
+	id,
+}) => {
 	const opts: YTOptions = {
 		height: (1080).toString(),
 		width: (1920).toString(),
@@ -41,6 +49,9 @@ const Divider: FC<Props> = ({ videoID, title, altImageURL, children, id }) => {
 				</Background>
 				<div className={styles.placeholder}>
 					{title && <div className={styles.title}>{title}</div>}
+					{subtitle && (
+						<div className={styles.subtitle}>{subtitle}</div>
+					)}
 					{children}
 				</div>
 			</Parallax>

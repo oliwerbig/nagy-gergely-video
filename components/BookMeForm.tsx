@@ -1,10 +1,14 @@
-import { useState } from 'react'
+import { FC } from 'react'
 import { toast } from 'react-toastify'
 import sendBookingEmail from '../sendBookingEmail'
 import sendBookingEmailToClient from '../sendBookingEmailToClient'
 import styles from './BookMeForm.module.scss'
 
-const BookMeForm = ({ formState, setFormState }) => {
+interface Props {
+	formState: any
+	setFormState: (formState: any) => void
+}
+const BookMeForm: FC<Props> = ({ formState, setFormState }) => {
 	const handleChange = (
 		e: React.ChangeEvent<
 			HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
@@ -43,7 +47,7 @@ const BookMeForm = ({ formState, setFormState }) => {
 
 	return (
 		<form className={styles.form}>
-			<h1>Ajánlatkérés</h1>
+			<h1 className={styles.title}>Ajánlatkérés</h1>
 			<div className={styles.input}>
 				<label>Név</label>
 				<input

@@ -1,21 +1,21 @@
 import Link from 'next/link'
+import { FC } from 'react'
 import { Link as ScrollLink } from 'react-scroll'
 import CTA from './CTA'
 import Divider from './Divider'
 import styles from './MyExperiences.module.scss'
 import YouTubeResponsive from './YouTubeResponsive'
 
-const MyExperiences = () => {
+const MyExperiences: FC = () => {
 	return (
-		<>
+		<section id='myExperiences'>
 			<Divider
 				videoID='jwsw-Ca-3N0'
 				altImageURL='/myExperiences.png'
 				title='Munkáim'
-				id='myExperiences'
 			/>
 			<section className={styles.section}>
-				<div>
+				<div className={styles.left}>
 					<p className={styles.text}>
 						Minden szónál többet ér, ha megnézitek a munkáim.
 						Tekintsétek meg a referencia videóimat, olvassátok el
@@ -28,14 +28,14 @@ const MyExperiences = () => {
 					</p>
 					<p>
 						<div className={styles.row}>
+							<YouTubeResponsive videoId='3wzFopqwR6k' />
 							<YouTubeResponsive videoId='20hNkjwwVg0' />
-							<YouTubeResponsive videoId='NwSuTIVtjfw' />
 						</div>
 						<div className={styles.row}>
-							<YouTubeResponsive videoId='SLxTvW1C3ow' />
+							<YouTubeResponsive videoId='NwSuTIVtjfw' />
 							<YouTubeResponsive videoId='rLqIL5bqa1A' />
 							<YouTubeResponsive videoId='zGinDqdg9vE' />
-							<YouTubeResponsive videoId='8HEn74PgOUg' />
+							<YouTubeResponsive videoId='SLxTvW1C3ow' />
 							<Link
 								href='https://www.youtube.com/watch?v=3wzFopqwR6k&list=PLKicgw4LWR7OxHWd2aXh3n7pBRytIHh3q'
 								passHref>
@@ -48,17 +48,23 @@ const MyExperiences = () => {
 						</div>
 					</p>
 				</div>
-				<ScrollLink
-					to='bookMe'
-					duration={500}
-					offset={150}
-					smooth={true}
-					className={styles.cta}
-					spyThrottle={1000}>
-					<CTA title='Kérj ajánlatot!' down className={styles.cta} />
-				</ScrollLink>
+				<div className={styles.right}>
+					<ScrollLink
+						to='bookMe'
+						duration={500}
+						offset={-50}
+						smooth={true}
+						className={styles.cta}
+						spyThrottle={1000}>
+						<CTA
+							title='Kérj ajánlatot!'
+							down
+							className={styles.cta}
+						/>
+					</ScrollLink>
+				</div>
 			</section>
-		</>
+		</section>
 	)
 }
 

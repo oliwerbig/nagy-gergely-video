@@ -1,0 +1,88 @@
+@import '../variables.scss';
+
+.row {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: stretch;
+	gap: 0.5rem;
+	padding: 2rem 0;
+
+	.ceremony {
+		background-color: rosybrown;
+	}
+	.highlights {
+		background-color: palegoldenrod;
+	}
+	.dream {
+		background-color: paleturquoise;
+	}
+
+	.priceOption {
+		flex: 1 1;
+		display: flex;
+		flex-flow: column wrap;
+		align-items: center;
+		transition: 0.25s ease;
+		border: 0.2rem dashed $secondary;
+		border-radius: 0.2rem;
+		padding: 0 0 4rem 0;
+
+		header {
+			padding: 3rem 4rem;
+			display: flex;
+			flex-flow: column wrap;
+			align-items: center;
+
+			h1 {
+				margin: 0;
+				font-size: xx-large;
+				font-variant: all-small-caps;
+				font-weight: 500;
+			}
+
+			h3 {
+				margin: 0;
+				font-size: xx-large;
+				font-variant: all-small-caps;
+				font-weight: 300;
+			}
+		}
+
+		&:hover {
+			transform: scale(1.005) translateY(-0.5rem);
+			transition: 0.25s ease;
+			cursor: pointer;
+		}
+
+		ul {
+			list-style: none;
+			padding: 0 2rem;
+
+			li {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				align-content: flex-start;
+				justify-content: space-evenly;
+				align-items: center;
+				gap: 1rem;
+				font-size: medium;
+				line-height: normal;
+				padding: 1rem 0;
+
+				.check {
+					width: 2rem;
+				}
+
+				div {
+					width: 100%;
+				}
+			}
+		}
+
+		&.selected {
+			border: 0.2rem solid $primary;
+			border-radius: 0.2rem;
+		}
+	}
+}

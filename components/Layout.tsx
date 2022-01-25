@@ -1,7 +1,11 @@
 import Head from 'next/head'
+import { FC } from 'react'
 import styles from './Layout.module.scss'
 
-export default function Layout({ children }) {
+interface Props {
+	children: any
+}
+const Layout: FC<Props> = ({ children }) => {
 	return (
 		<>
 			<Head>
@@ -11,3 +15,5 @@ export default function Layout({ children }) {
 		</>
 	)
 }
+
+export default Layout

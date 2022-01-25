@@ -1,15 +1,15 @@
+import Image from 'next/image'
+import { FC } from 'react'
 import { Link as ScrollLink } from 'react-scroll'
-import YouTube, { Options as YTOptions } from 'react-youtube'
 import CTA from './CTA'
 import styles from './MyMission.module.scss'
-import YouTubeResponsive from './YouTubeResponsive'
 
-const MyMission = () => {
+const MyMission: FC = () => {
 	return (
-		<section className={styles.section} id='myMission'>
-			<h1 className={styles.title}>Kedves Ifjú pár!</h1>
-			<section className={styles.content}>
-				<div>
+		<section id='myMission'>
+			<section className={styles.section}>
+				<div className={styles.left}>
+					<h1 className={styles.title}>Kedves Ifjú pár!</h1>
 					<p className={styles.text}>
 						Egy esküvőn az érzelmek szinte egész skálája megjelenik,
 						tele van örömmel, nevetéssel, meghatódottsággal és
@@ -31,7 +31,7 @@ const MyMission = () => {
 					<ScrollLink
 						to='myWorkflow'
 						duration={500}
-						offset={150}
+						offset={-50}
 						smooth={true}>
 						<CTA
 							title='Hogyan dolgozom?'
@@ -40,14 +40,15 @@ const MyMission = () => {
 						/>
 					</ScrollLink>
 				</div>
-				<div>
-					<YouTubeResponsive
-						videoId='3wzFopqwR6k'
-						autoplay={true}
-						mute={true}
-						loop={true}
-						className={styles.video}
-					/>
+				<div className={styles.right}>
+					<div className={styles.image}>
+						<Image
+							src='/Nagy-Gergely.png'
+							width={433}
+							height={531}
+							layout='responsive'
+						/>
+					</div>
 				</div>
 			</section>
 		</section>

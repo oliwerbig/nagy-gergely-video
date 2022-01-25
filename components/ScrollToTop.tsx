@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react'
+import React, { FC, useEffect } from 'react'
 import { ArrowIosUpwardOutline } from 'styled-icons/evaicons-outline'
 import styles from './ScrollToTop.module.scss'
 import { animateScroll as scroll } from 'react-scroll'
 import usePageOffset from '../hooks/usePageOffset'
 
-const ScrollToTop = () => {
+const ScrollToTop: FC = () => {
 	const offset = usePageOffset()
 
 	return (
