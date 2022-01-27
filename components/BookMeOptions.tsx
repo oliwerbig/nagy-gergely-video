@@ -23,6 +23,7 @@ const BookMeOptions: FC<Props> = ({ formState, setFormState }) => {
 					<h1 className={styles.title}>Ceremónia</h1>
 					<h3 className={styles.price}>100.000Ft</h3>
 				</header>
+				<hr />
 				<ul>
 					<li>
 						<Check className={styles.check} />
@@ -73,6 +74,7 @@ const BookMeOptions: FC<Props> = ({ formState, setFormState }) => {
 					<h1 className={styles.title}>Highlights</h1>
 					<h3 className={styles.price}>150.000Ft</h3>
 				</header>
+				<hr />
 				<ul>
 					<li>
 						<Check className={styles.check} />
@@ -131,6 +133,7 @@ const BookMeOptions: FC<Props> = ({ formState, setFormState }) => {
 					<h1 className={styles.title}>Álomvideó</h1>
 					<h3 className={styles.price}>200.000Ft</h3>
 				</header>
+				<hr />
 				<ul>
 					<li>
 						<Check className={styles.check} />

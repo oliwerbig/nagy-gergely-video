@@ -48,11 +48,22 @@
 	ul {
 		list-style: none;
 		display: flex;
-		flex-direction: row;
+		flex-flow: row wrap;
 		justify-content: center;
 		align-items: center;
-		align-content: flex-start;
-		flex-wrap: nowrap;
 		margin: 0;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.navbar {
+		position: sticky;
+		background-color: black;
+		opacity: 90%;
+		padding: 0.625rem;
+
+		ul {
+			flex-flow: column wrap;
+		}
 	}
 }

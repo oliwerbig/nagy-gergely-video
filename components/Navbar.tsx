@@ -71,7 +71,7 @@ const Navbar: FC = () => {
 						smooth={true}
 						duration={500}
 						onSetActive={handleSetActive}
-						offset={-50}
+						offset={-100}
 						spyThrottle={1000}>
 						<div className={styles.link}>Árak</div>
 					</ScrollLink>

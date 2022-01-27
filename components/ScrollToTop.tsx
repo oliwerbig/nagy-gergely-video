@@ -11,7 +11,7 @@ const ScrollToTop: FC = () => {
 		<div
 			className={styles.scrollToTop}
 			style={{
-				display: offset > 20 ? 'block' : 'none',
+				display: offset > 20 ? 'flex' : 'none',
 			}}
 			onClick={() => scroll.scrollToTop()}>
 			<ArrowIosUpwardOutline className={styles.arrow} />

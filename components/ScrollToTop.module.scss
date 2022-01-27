@@ -1,20 +1,28 @@
 .scrollToTop {
 	display: none; /* Hidden by default */
 	position: fixed; /* Fixed/sticky position */
-	bottom: 2.5rem; /* Place the button at the bottom of the page */
-	right: 3rem; /* Place the button 30px from the right */
+	bottom: 3vmax; /* Place the button at the bottom of the page */
+	right: 3vmax; /* Place the button 30px from the right */
 	z-index: 99; /* Make sure it does not overlap */
 	border: none; /* Remove borders */
 	outline: none; /* Remove outline */
 	background-color: rgba(0, 0, 0, 0.65); /* Set a background color */
 	color: white; /* Text color */
 	cursor: pointer; /* Add a mouse pointer on hover */
-	padding: 0.5rem; /* Some padding */
-	border-radius: 1rem; /* Rounded corners */
+	padding: 0.5vmax; /* Some padding */
+	border-radius: 1vmax; /* Rounded corners */
 	font-size: larger; /* Increase font size */
-	width: 2vw;
+	width: 2vmax;
+	height: 2vmax;
 
 	transition: 0.1s ease;
+
+	//display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
 
 	&:hover {
 		background-color: rgb(

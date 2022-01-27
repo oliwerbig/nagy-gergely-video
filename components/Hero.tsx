@@ -47,7 +47,7 @@ const Hero: FC = () => {
 							offset={-50}
 							smooth={true}
 							spyThrottle={1000}>
-							<CTA title='Mi küldetésem?' down light />
+							<CTA title='Mi a küldetésem?' down light />
 						</ScrollLink>
 					</div>
 				</Parallax>

@@ -53,7 +53,7 @@ const BookMe: FC = () => {
 							<ScrollLink
 								to='myPrices'
 								duration={500}
-								offset={-50}
+								offset={-100}
 								smooth={true}>
 								<CTA
 									title='Milyen árakra számíthatsz?'
