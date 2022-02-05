@@ -1,7 +1,8 @@
 import { toast } from 'react-toastify'
 
 const sendBookingEmailToClient = async ({
-	name,
+	bride,
+	groom,
 	email,
 	phone,
 	date,
@@ -20,7 +21,8 @@ const sendBookingEmailToClient = async ({
 			message: `
                 <h1>Árajánlat kérésed tartalma:</h1>
                 <p>
-                    <strong>Név:</strong> ${name}<br />
+                    <strong>Menyasszony neve:</strong> ${bride}<br />
+                    <strong>Vőlegény neve:</strong> ${groom}<br />
                     <strong>E-mail:</strong> ${email}<br />
                     <strong>Telefon:</strong> ${phone}<br />
                     <strong>Dátum:</strong> ${date}<br />

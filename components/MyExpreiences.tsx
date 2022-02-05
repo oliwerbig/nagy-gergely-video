@@ -27,24 +27,38 @@ const MyExperiences: FC = () => {
 						nem utolsó sorban sok boldogságot az ifjú párnak!
 					</p>
 					<p>
-						<div className={styles.row}>
-							<YouTubeResponsive videoId='3wzFopqwR6k' />
-							<YouTubeResponsive videoId='20hNkjwwVg0' />
+						<div className={`${styles.row} ${styles.large}`}>
+							<div className={styles.video}>
+								<YouTubeResponsive videoId='3wzFopqwR6k' />
+							</div>
+							<div className={styles.video}>
+								<YouTubeResponsive videoId='20hNkjwwVg0' />
+							</div>
 						</div>
 						<div className={styles.row}>
-							<YouTubeResponsive videoId='NwSuTIVtjfw' />
-							<YouTubeResponsive videoId='rLqIL5bqa1A' />
-							<YouTubeResponsive videoId='zGinDqdg9vE' />
-							<YouTubeResponsive videoId='SLxTvW1C3ow' />
-							<Link
-								href='https://www.youtube.com/watch?v=3wzFopqwR6k&list=PLKicgw4LWR7OxHWd2aXh3n7pBRytIHh3q'
-								passHref>
-								<a
-									className={styles.moreVideos}
-									target='_blank'>
-									<CTA title='Több' right />
-								</a>
-							</Link>
+							<div className={styles.video}>
+								<YouTubeResponsive videoId='NwSuTIVtjfw' />
+							</div>
+							<div className={styles.video}>
+								<YouTubeResponsive videoId='rLqIL5bqa1A' />
+							</div>
+							<div className={styles.video}>
+								<YouTubeResponsive videoId='zGinDqdg9vE' />
+							</div>
+							<div className={styles.video}>
+								<YouTubeResponsive videoId='SLxTvW1C3ow' />
+							</div>
+							<div className={styles.video}>
+								<Link
+									href='https://www.youtube.com/watch?v=3wzFopqwR6k&list=PLKicgw4LWR7OxHWd2aXh3n7pBRytIHh3q'
+									passHref>
+									<a
+										className={styles.moreVideos}
+										target='_blank'>
+										<CTA title='Több' right />
+									</a>
+								</Link>
+							</div>
 						</div>
 					</p>
 				</div>

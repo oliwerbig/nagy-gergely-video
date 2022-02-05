@@ -19,9 +19,9 @@ const BookMeForm: FC<Props> = ({ formState, setFormState }) => {
 	}
 
 	const validateForm = () => {
-		const { name, email, phone, date, location, option, message } =
+		const { bride, groom, email, phone, date, location, option, message } =
 			formState
-		return name && email && phone && date && location && option
+		return bride && groom && email && phone && date && location && option
 	}
 
 	const handleSubmit = (e: any) => {
@@ -35,7 +35,8 @@ const BookMeForm: FC<Props> = ({ formState, setFormState }) => {
 		sendBookingEmailToClient(formState)
 
 		setFormState({
-			name: '',
+			bride: '',
+			groom: '',
 			email: '',
 			phone: '',
 			date: '',
@@ -49,14 +50,25 @@ const BookMeForm: FC<Props> = ({ formState, setFormState }) => {
 		<form className={styles.form}>
 			<h1 className={styles.title}>Ajánlatkérés</h1>
 			<div className={styles.input}>
-				<label>Név</label>
+				<label>Menyasszony neve</label>
 				<input
 					required
-					name='name'
-					placeholder='Neved'
+					name='bride'
+					placeholder='Menyasszony neve'
 					type='text'
 					onChange={handleChange}
-					value={formState.name}
+					value={formState.bride}
+				/>
+			</div>
+			<div className={styles.input}>
+				<label>Vőlegény neve</label>
+				<input
+					required
+					name='groom'
+					placeholder='Vőlegény neve'
+					type='text'
+					onChange={handleChange}
+					value={formState.groom}
 				/>
 			</div>
 			<div className={styles.input}>

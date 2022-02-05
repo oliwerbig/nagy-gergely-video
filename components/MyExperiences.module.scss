@@ -17,9 +17,20 @@
 
 		.row {
 			display: flex;
+			flex-flow: row wrap;
 			gap: 1rem;
 			align-items: center;
 			justify-content: center;
+
+			.video {
+				flex: 1 0 5rem;
+			}
+
+			&.large {
+				.video {
+					flex: 1 0 20rem;
+				}
+			}
 
 			.moreVideos {
 				text-decoration: none;

@@ -52,6 +52,18 @@ const Navbar: FC = () => {
 				</li>
 				<li>
 					<ScrollLink
+						to='gallery'
+						activeClass={styles.active}
+						smooth={true}
+						duration={500}
+						onSetActive={handleSetActive}
+						offset={-50}
+						spyThrottle={1000}>
+						<div className={styles.link}>Betekintő</div>
+					</ScrollLink>
+				</li>
+				<li>
+					<ScrollLink
 						to='myWorkflow'
 						activeClass={styles.active}
 						spy={true}
@@ -78,28 +90,26 @@ const Navbar: FC = () => {
 				</li>
 				<li>
 					<ScrollLink
+						to='contact'
+						activeClass={styles.active}
+						smooth={true}
+						duration={500}
+						onSetActive={handleSetActive}
+						offset={-100}
+						spyThrottle={1000}>
+						<div className={styles.link}>Kapcsolat</div>
+					</ScrollLink>
+				</li>
+				<li>
+					<ScrollLink
 						to='bookMe'
 						activeClass={styles.active}
-						spy={true}
 						smooth={true}
 						duration={500}
 						onSetActive={handleSetActive}
 						offset={-50}
 						spyThrottle={1000}>
 						<div className={styles.link}>Ajánlatkérés</div>
-					</ScrollLink>
-				</li>
-				<li>
-					<ScrollLink
-						to='contact'
-						activeClass={styles.active}
-						spy={true}
-						smooth={true}
-						duration={500}
-						onSetActive={handleSetActive}
-						offset={-50}
-						spyThrottle={1000}>
-						<div className={styles.link}>Kapcsolat</div>
 					</ScrollLink>
 				</li>
 			</ul>

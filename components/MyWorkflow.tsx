@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import { Link as ScrollLink } from 'react-scroll'
+import Signature from '../public/signature.svg'
 import CTA from './CTA'
 import Divider from './Divider'
 import styles from './MyWorkflow.module.scss'
@@ -99,7 +100,9 @@ const MyWorkflow: FC = () => {
 					pedig, nagyon sok boldogságot kívánok nektek!{' '}
 				</p>
 				<p className={styles.text}>Üdvözlettel, </p>
-				<p className={styles.signature}>Nagy Gergely</p>
+				<p className={styles.signature}>
+					<Signature />
+				</p>
 
 				<ScrollLink
 					to='myExperiences'

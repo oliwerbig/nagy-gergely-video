@@ -2,6 +2,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import BookMe from '../components/BookMe'
 import Divider from '../components/Divider'
 import Footer from '../components/Footer'
+import Gallery from '../components/Gallery'
 import Hero from '../components/Hero'
 import Layout from '../components/Layout'
 import MyExperiences from '../components/MyExpreiences'
@@ -19,13 +20,7 @@ export default function Index() {
 				<MyExperiences />
 				<MyWorkflow />
 				<BookMe />
-				<Divider
-					videoID='rLqIL5bqa1A'
-					altImageURL='/contact.png'
-					title='Kapcsolat'
-					subtitle='Nagy Gergely - email@nagygergely.info - 06 30 646 4640'
-					id='contact'
-				/>
+				<Gallery />
 				<ScrollToTop />
 			</section>
 		</>
